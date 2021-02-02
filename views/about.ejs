@@ -1,0 +1,205 @@
+<%- include('partials/header') %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+.collapsible {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 5%;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 10%;
+}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 40%;
+
+
+
+</style>
+</head>
+<body>
+  <br>
+<div class="polaroid">
+  <img src="https://thewellbeingproject.co.uk/wp-content/uploads/2017/09/Star-Mental-Wellbeing-Large-1.png" alt="5 Terre" style="width:100%">
+  <div class="container">
+  <p>Secrets: Mental Wellbeing</p>
+  </div>
+</div>
+<div class="jumbotron centered">
+<button type="button" class="collapsible">
+  <i class="fas fa-arrow-circle-down"></i>
+  Strangers on Your Phone: Why People Use Anonymous Communication Applications
+</button>
+<div class="content">
+  <div class="jumbotron centered">
+    <div class="container">
+      
+  
+        Anonymity online is important to people at times in their lives. Anonymous
+        communication applications such as Whisper and YikYak enable people to
+        communicate with strangers anonymously through their smartphones.
+        People share various types of content that range from deep confessions and secrets
+        to lighthearted jokes and momentary feelings. An important driver for participation
+        and posting is to get social validation from others, even though they are
+        anonymous strangers.
+        participants believe these anonymous apps allow more honesty, openness, and
+        diversity of opinion than they can find elsewhere.</p>
+      
+  
+    </div>
+  </div></div>
+<button type="button" class="collapsible">  <i class="fas fa-arrow-circle-down"></i>
+  Why do people seek anonymity
+  on the internet?: informing
+  policy and design</button>
+<div class="content">
+  <div class="jumbotron centered">
+    <div class="container">
+  <p>we set out to discover why and how people seek anonymity in their online interactions.
+     goal is to inform policy and the design of future Internet architecture and applications.
+    the very large variation in interviewees' past experiences and life situations leading
+    them to seek anonymity, and how they tried to achieve it.</p>
+    </div></div>
+</div>
+<button type="button" class="collapsible">  <i class="fas fa-arrow-circle-down"></i>
+  Situated Anonymity: Impacts of
+  Anonymity, Ephemerality, and Hyper-
+  Locality on Social Media</button>
+<div class="content">
+<p>
+  <div class="jumbotron centered">
+    <div class="container">
+  Anonymity, ephemerality, and hyper-locality are an uncommon set of
+features in the design of online communities.
+these three features deeply affected the identity of the
+community as a whole, the patterns of use, and the ways users
+committed to this community.
+</p></div></div>
+</div>
+
+
+<button type="button" class="collapsible">  <i class="fas fa-arrow-circle-down"></i>
+  A Meta-Analysis of the
+Effectiveness of Mental Health
+Case Management Over 20
+Years</button>
+<div class="content">
+<p>
+  <div class="jumbotron centered">
+    <div class="container">
+      Meta-analytical methods were used to investigate the effectiveness of
+case management and to compare outcomes for assertive community
+treatment and clinical case management.
+Controlled studies of case management published between 1980 and
+1998 were identified from reviews and through database searches.
+The results were quantitatively combined and compared with results of
+studies of mental health services without case management.
+Combined effect sizes and significance levels for 12 outcome domains
+were calculated. Analysis of homogeneity was used to explore
+differences between models.
+</p></div></div>
+</div>
+
+
+<button type="button" class="collapsible">  <i class="fas fa-arrow-circle-down"></i>
+  Personal Informatics in
+Interpersonal Contexts: Towards the
+Design of Technology that Supports
+the Social Ecologies of Long-Term
+Mental Health Management</button>
+<div class="content">
+<p>
+  <div class="jumbotron centered">
+    <div class="container">
+      Personal informatics systems for supporting health largely grew out of a
+      "self"-centric orientation: self-tracking, self-reflection, self-knowledge,
+      self-experimentation, self-improvement.
+      Health management, however, even when self-driven, is inherently
+      social and depends on a person's direct relationships and broader
+      sociocultural contexts, as an emerging line of research is coming to
+      recognize, study, and support.
+      This is particularly true in the case of mental health.
+</p></div></div>
+</div>
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer') %>
